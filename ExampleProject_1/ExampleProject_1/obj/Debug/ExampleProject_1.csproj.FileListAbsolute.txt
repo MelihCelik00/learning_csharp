@@ -1,0 +1,5 @@
+/Users/melihsafacelik/Projects/ExampleProject_1/ExampleProject_1/bin/Debug/ExampleProject_1.exe
+/Users/melihsafacelik/Projects/ExampleProject_1/ExampleProject_1/bin/Debug/ExampleProject_1.pdb
+/Users/melihsafacelik/Projects/ExampleProject_1/ExampleProject_1/obj/Debug/ExampleProject_1.csprojAssemblyReference.cache
+/Users/melihsafacelik/Projects/ExampleProject_1/ExampleProject_1/obj/Debug/ExampleProject_1.exe
+/Users/melihsafacelik/Projects/ExampleProject_1/ExampleProject_1/obj/Debug/ExampleProject_1.pdb
