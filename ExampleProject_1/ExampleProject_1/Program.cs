@@ -1,42 +1,61 @@
-﻿using System;
+using System;
 using System.Collections.Generic;
 using System.IO;
 namespace ExampleProject_1
 {
-    class Solution
+    class Person
     {
+        public int age;
+        public Person(int initialAge)
+        {
+            // Add some more code to run some checks on initialAge
+            if (initialAge < 0)
+            {
+                initialAge = 0;
+                Console.WriteLine("Age is not valid, setting age to 0.");
+            }
+            age = initialAge;
+
+        }
+        public void amIOld()
+        {
+            // Do some computations in here and print out the correct statement to the console
+            if (age < 13)
+            {
+                Console.WriteLine("You are young.");
+            }
+            else if (age >= 13 && age < 18)
+            {
+                Console.WriteLine("You are a teenager.");
+            }
+            else
+            {
+                Console.WriteLine("You are old.");
+            }
+        }
+
+        public void yearPasses()
+        {
+            // Increment the age of the person in here
+            age++;
+        }
+
         static void Main(String[] args)
         {
-            int i = 4;
-            double d = 4.0;
-            string s = "HackerRank ";
-
-            int sum;
-            double dabdab;
-            string str;
-
-            sum = Convert.ToInt32(Console.ReadLine());
-            string strToDouble = Console.ReadLine();
-            str = Console.ReadLine();
-
-
-            dabdab = double.Parse(strToDouble);
-
-            Console.WriteLine(i + sum);
-            Console.WriteLine("{0:F1}", d + dabdab);
-            Console.WriteLine(s + str);
-
-            // Declare second integer, double, and String variables.
-
-            // Read and save an integer, double, and String to your variables.
-
-            // Print the sum of both integer variables on a new line.
-
-            // Print the sum of the double variables on a new line.
-
-            // Concatenate and print the String variables on a new line
-            // The 's' variable above should be printed first.
-
+            int T = int.Parse(Console.In.ReadLine());
+            for (int i = 0; i < T; i++)
+            {
+                int age = int.Parse(Console.In.ReadLine());
+                Person p = new Person(age);
+                p.amIOld();
+                for (int j = 0; j < 3; j++)
+                {
+                    p.yearPasses();
+                }
+                p.amIOld();
+                Console.WriteLine();
+            }
         }
     }
 }
+
